@@ -1,32 +1,64 @@
 :root {
-
+    --bg: white;
+    --fg: green;
+    --brand: blue;
+    --nav-bg: purple;
+    --brand-weight: 700;
 }
 
 * {
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: var(--fg);
+    background-color: var(--bg);
 }
 
 .brand {
+    color:crimson;
+    background-color: var(--nav-bg);
+    font-weight: var(--brand-weight);
+    padding: 1rem;
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    background-color: var(--nav-bg);
 }
 
 .nav a {
+    text-decoration: none;
+    color:inherit;
+    padding: 0.5rem .75rem;
+    border-radius: .5rem;
 }
 
 .nav a:hover {
+    background: rgba(0, 0, 0, 0);
+    transition: background .3s ease;
 
 }
 
 .content {
+    padding: 1.5rem;
 
 }
 
 @media (min-width: 640px) {
-
+    .nav{
+        position: sticky;
+        top: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
 
 @media (orientation: landscape) {
@@ -36,7 +68,14 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-
+    :root {
+        --bg: darkblue;
+        --fg: yellow;
+        --nav-bg: white;
+    }
+    .nav a {
+        background: rgba(255, 255, 255, 0.07)
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {

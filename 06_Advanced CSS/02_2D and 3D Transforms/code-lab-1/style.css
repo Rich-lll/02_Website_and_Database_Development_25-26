@@ -82,105 +82,135 @@ section h2 {
 /* Existing transform demos */
 
 #myDiv1 {
+    transform: translate(50px);
 }
 
 #myDiv2 {
+    transform: translate(50px, 20px);
 }
 
 #myDiv3 {
+    transform: translate(100px, 30px);
 }
 
 #myDiv4 {
+    transform: rotate(25deg);
 }
 
 #myDiv5 {
+    transform: rotate(45deg);
 }
 
 #myDiv6 {
+    transform: rotate(-45deg);
 }
 
 #myDiv7 {
+    transform: scaleX(0.7)
 }
 
 #myDiv8 {
+    transform: scaleX(90%)
 }
 
 #myDiv9 {
+    transform: scaleX(1.1)
 }
 
 #myDiv10 {
+    transform: scaleY(0.5)
 }
 
 #myDiv11 {
+    transform: scaleY(70%)
 }
 
 #myDiv12 {
+    transform: scaleY(1.1)
 }
 
 #myDiv13 {
+    transform: scale(0.7)
 }
 
 #myDiv14 {
+    transform: scale(110%)
 }
 
 #myDiv15 {
+    transform: scale(1.1, 0.5)
 }
 
 #myDiv16 {
+    transform: skewX(15deg);
 }
 
 #myDiv17 {
+    transform: skewX(30deg);
 }
 
 #myDiv18 {
+    transform: skewX(-25deg);
 }
 
 #myDiv19 {
+    transform: skewY(15deg);
 }
 
 #myDiv20 {
+    transform: skewX(30deg);
 }
 
 #myDiv21 {
+    transform: skewY(-25deg);
 }
 
 #myDiv22 {
 }
 
 #myDiv23 {
+    transform: skew(-15deg, 15deg);
 }
 
 #myDiv24 {
+    transform: skew(-15deg);
 }
 
 #myDiv25 {
+    transform: skew(-15deg, 15deg);
 }
 
 #myDiv26 {
+    transform: rotate(15deg);
 }
 
 #myDiv27 {
+    transform: matrix(1, -0.3, 0, 1, 0, 50);
 }
 
 #myDiv28 {
+    transform: matrix(1, 0, 0.5, 1, 50, 50);
 }
 
 #myDiv29 {
+    transform: matrix(2, 1, 0.5, 1, 90, 70);
 }
 
 /* Combined transforms */
 
 #myDiv30 {
     /* Move right and down, then rotate */
-
+    transform: translate(50px, 20px) rotate(20deg);
 }
 
 #myDiv31 {
     /* Make it wider and shorter, then skew along X */
+    transform: scale(1.2, 0.8) skewX(15deg);
 }
 
 #myDiv32 {
     /* Move slightly, scale up, then rotate counter-clockwise */
+    transform:rotate(30deg) translate(100px, 0);
 }
 
 /* Order examples */
@@ -188,51 +218,65 @@ section h2 {
 /* Example 1: Same functions, different order */
 #myDiv33 {
     /* Translation happens first (right), then rotation */
+    transform: rotate(30deg) translate(100px, 0);
 }
 
 #myDiv34 {
     /* Rotation happens first, then translation */
+    transform: translate(100px, 0) rotate(30deg);
 }
 
 /* Example 2: scale + translate vs translate + scale */
 #myDiv35 {
     /* scale(1.5) then translate(80px, 0) */
+    transform: scale(1.5) translate(80px, 0)
 }
 
 #myDiv36 {
+    transform: translate(80px, 0) scale(1.5);
     /* translate(80px, 0) then scale(1.5) */
 }
 
 /* Give 3D examples some perspective so rotateX/rotateY look 3D */
 .examples-grid-3d {
+    perspective: 500px;
 }
 
 /* 3D rotation examples */
 
 #myDiv37 {
+    transform: rotateX(25deg);
 }
 
 #myDiv38 {
+    transform: rotateX(45deg)
 }
 
 #myDiv39 {
+    Transform: rotateX(-45deg)
 }
 
 #myDiv40 {
+    transform: rotateY(25deg)
 }
 
 #myDiv41 {
+    transform: rotateY(45deg)
 }
 
 #myDiv42 {
+    transform: rotateY(-45deg)
 }
 
 #myDiv43 {
+    transform: rotateZ(25deg)
 }
 
 #myDiv44 {
+    transform: rotateZ(45deg)
 }
 
 #myDiv45 {
+    transform: rotateZ(-45deg)
 }
 

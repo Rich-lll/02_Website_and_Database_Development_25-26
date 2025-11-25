@@ -16,10 +16,6 @@ body {
     display: grid;
     place-items: center;
     padding: 4rem 1.5rem;
-    background-image: radial-gradient(60% 80% at 20% 20%, rgba(255, 255, 255, 0.3), transparent 60%),
-    linear-gradient(135deg, #6a5af9 0%, #b65ef1 45%, #ff7ac3 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .hero__content {
@@ -49,7 +45,6 @@ body {
     color: #5a32ea;
     font-weight: 700;
     text-decoration: none;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .btn:hover {
@@ -70,13 +65,7 @@ body {
     padding: 1.25rem;
     border-radius: 16px;
     color: white;
-    background-image: radial-gradient(80% 80% at 20% 10%, rgba(255, 255, 255, 0.18), transparent 60%),
-    linear-gradient(135deg, #00c2ff, #0066ff);
-    transform: translateY(0);
-
-    transition: transform 2500ms cubic-bezier(0.2, 0.65, 0.3, 1);
 }
 
 .card:hover {
-    transform: translateY(-6px);
 }
